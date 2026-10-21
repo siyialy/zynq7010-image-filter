@@ -3,6 +3,12 @@
 
 [中文说明见下方](#中文说明) · [English below](#english)
 
+[![Release](https://img.shields.io/badge/release-v1.0-brightgreen)](https://github.com/siyialy/zynq7010-image-filter/releases/tag/v1.0)
+[![Download](https://img.shields.io/badge/%E2%AC%87%20%E4%B8%8B%E8%BD%BD%E5%8D%B3%E7%94%A8%E6%88%90%E5%93%81-system__top.bit-blue)](https://github.com/siyialy/zynq7010-image-filter/releases/latest)
+
+> **不想自己构建？** 直接下载 [**v1.0 Release**](https://github.com/siyialy/zynq7010-image-filter/releases/tag/v1.0)
+> 里的 `system_top.bit`（2 MB，可直接烧板）和 `design_report.docx`（作品报告）。
+
 ![Four filter modes running on the board](docs/images/modes.jpg)
 
 *四种滤波模式在真实硬件上的输出（同一幅源图，1280×720@60 实时显示）*
