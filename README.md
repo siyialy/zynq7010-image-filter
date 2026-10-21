@@ -3,6 +3,10 @@
 
 [中文说明见下方](#中文说明) · [English below](#english)
 
+![Four filter modes running on the board](docs/images/modes.jpg)
+
+*四种滤波模式在真实硬件上的输出（同一幅源图，1280×720@60 实时显示）*
+
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-ZYNQ--7010-blue)
 ![Tool](https://img.shields.io/badge/tool-Vivado%202018.3-orange)
