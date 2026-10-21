@@ -1,0 +1,59 @@
+# ============================================================
+#  FPGA-Zynq7010-ImageFilter  仓库忽略规则
+#  原则：只提交"源码 + 脚本 + 文档 + 少量成品"，
+#        所有可重建的中间产物 / 厂商版权资料一律忽略
+# ============================================================
+
+# ---------- Vivado / SDK 运行时产物 ----------
+*.jou
+*.log
+*.str
+*.backup
+*.wdb
+*.wcfg
+.Xil/
+.xsim.dir/
+vivado_pid*.str
+webtalk*
+xsim.dir/
+*.dcp
+*.xpr.bak
+
+# ---------- 构建与仿真输出（可用 build/*.tcl 重建） ----------
+build/*_sim/
+build/*_proj/
+build/output/
+build/bitstream/
+build/*.place
+build/*.route
+
+# ---------- SDK / Vitis 工作区（可用 build_app.tcl 重建） ----------
+sdk_ws/
+Debug/
+Release/
+*.elf
+*.o
+*.d
+*.map
+
+# ---------- 厂商版权资料（本地保留，不公开） ----------
+#  原理图 PDF、引脚分配表、厂商例程反编译文本
+_ref/
+board/schematic/
+board/xdc/
+board/examples/
+
+# ---------- 系统与编辑器 ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# ---------- 大体积压缩包 ----------
+*.zip
+*.rar
+*.7z
+
+# ---------- 个人工作记录（不公开） ----------
+RESUME.md

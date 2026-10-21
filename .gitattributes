@@ -1,0 +1,35 @@
+# ============================================================
+#  .gitattributes —— 统一换行与文本/二进制判定
+#  作用：Windows 上提交的 CRLF 不会污染仓库，
+#        Verilog/Tcl/Python 在所有平台都按 LF 存储
+# ============================================================
+
+* text=auto eol=lf
+
+# 明确为文本
+*.v        text eol=lf
+*.sv       text eol=lf
+*.vh       text eol=lf
+*.tcl      text eol=lf
+*.xdc      text eol=lf
+*.c        text eol=lf
+*.h        text eol=lf
+*.md       text eol=lf
+*.py       text eol=lf
+*.ps1      text eol=lf
+*.cmd      text eol=crlf
+*.mem      text eol=lf
+*.coe      text eol=lf
+
+# 明确为二进制（避免被当作文本做换行转换而损坏）
+*.bit      binary
+*.hdf      binary
+*.xsa      binary
+*.elf      binary
+*.dcp      binary
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.pdf      binary
+*.docx     binary
+*.xlsx     binary

@@ -1,0 +1,44 @@
+# NOTICE — 第三方代码与资料说明
+
+本仓库中 **除下列文件外**，所有 Verilog、C、Tcl、Python 代码、文档与图片均由本项目作者编写，
+并按根目录 `LICENSE`（MIT）授权。
+
+## 1. TMDS / DVI 输出相关模块
+
+以下三个文件改编自 **正点原子（ALIENTEK）启明星 ZYNQ 开发板配套例程
+`22_hdmi_colorbar`**，该例程本身基于 Xilinx / Digilent 公开的 DVI 参考设计：
+
+| 文件 | 来源与改动 |
+|---|---|
+| `src/rtl/dvi_encoder.v` | 原样使用（8b/10b 编码，依据 DVI 1.0 规范） |
+| `src/rtl/serializer_10_to_1.v` | 原样使用（OSERDESE2 10:1 DDR 串行化） |
+| `src/rtl/dvi_transmitter_top.v` | 原样使用（TMDS 四通道顶层） |
+
+这些文件的使用受其原始许可约束。若需再分发，请一并保留本说明，
+并自行确认符合 Xilinx / ALIENTEK 的授权条款。
+
+> 说明：DVI 1.0 规范的 8b/10b 编码表属于公开技术规范，
+> 但具体 RTL 实现来自上述参考设计，故在此明确标注来源。
+
+## 2. 板级资料（不随仓库分发）
+
+以下文件仅用于本地开发，已在 `.gitignore` 中排除，**不在本仓库内**：
+
+- `board/schematic/*.pdf` —— 开发板原理图（版权属正点原子）
+- `board/xdc/*` —— 官方引脚分配表（版权属正点原子）
+- `_ref/*` —— 厂商例程的反编译文本、器件手册摘录
+
+## 3. 图像素材
+
+| 文件 | 说明 |
+|---|---|
+| `tools/img_src/dragon.jpg` | 本作品实拍照片，作者原创 |
+| `tools/img_src/photo.jpg` | 本作品实拍照片，作者原创 |
+| `src/rtl/image_gray.mem` / `.coe` | 由上述照片经 `tools/bmp2coe.py` 生成的 320×240 灰度 ROM 初始化文件 |
+| `report/photos/*` | 本作品实拍（开发板、显示器画面），作者原创 |
+| `report/figures/*` | 由 `report/make_figures.py` 程序生成 |
+
+## 4. 工具链
+
+本项目的构建依赖 **Xilinx Vivado / SDK 2018.3**（商业软件，不随仓库分发）。
+仓库中的 Tcl 脚本只调用其命令行接口，不包含任何 Xilinx 专有代码。
