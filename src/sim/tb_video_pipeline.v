@@ -25,6 +25,9 @@ module tb_video_pipeline;
 
     wire [23:0] rgb_out;
     wire        hs_out, vs_out, de_out;
+    wire [16:0] buf_raddr;
+    wire [7:0]  buf_rdata = 8'h00;      // 彩条模式不用图像缓冲区
+    wire [383:0] box_bus  = 384'd0;     // 不画框
 
     video_pipeline #(
         .H_VISIBLE(640), .H_FP(16), .H_SYNC(96), .H_BP(48),
@@ -36,6 +39,9 @@ module tb_video_pipeline;
         .rst_n   (rst_n),
         .mode    (mode),
         .src_sel (1'b0),
+        .display_hold(1'b0),.box_bus   (box_bus),
+        .buf_raddr (buf_raddr),
+        .buf_rdata (buf_rdata),
         .rgb_out (rgb_out),
         .hs_out  (hs_out),
         .vs_out  (vs_out),

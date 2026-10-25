@@ -1,0 +1,1346 @@
+{
+  "schema_version": 1,
+  "dataset_id": "fbb17159c11345e5dc858e59c7f80c1310e78ff223bd642753744a79d1c8e80f",
+  "dataset_role": "development",
+  "bbox_format": "xyxy_half_open",
+  "proposal_source": "v2.4 PL (same algorithm as v2.3)",
+  "exported_at": "2026-10-25T02:27:28.685Z",
+  "images": [
+    {
+      "id": "sample_01",
+      "filename": "sample_01.png",
+      "original_name": "000146ff-92a4-4db6-90ad-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "28f9002939b497212feaa1f7183abf04daa9024643ec7de3c65dab901ae8435c",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_02",
+      "filename": "sample_02.png",
+      "original_name": "0b5cfce2-38fd-4984-8926-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "0f1f65122ad73e7d78f2377556b543f9c73bfd583119dcc3f6c3176f2b849f8c",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_03",
+      "filename": "sample_03.png",
+      "original_name": "34a5aaa7-f50f-4b19-8a92-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "e8a8350db73e375ab46c572625d6e40e4749d980c0fe2113156ea85b515cf912",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_04",
+      "filename": "sample_04.png",
+      "original_name": "3f1beda2-534d-4970-b33e-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "53a4b1d3d6c23d039c72a8239553eb5a45d9957b7275360819e77dc79a0b24c7",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_05",
+      "filename": "sample_05.png",
+      "original_name": "52325034-c2a2-4f00-b49d-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "f0072c646f4a6288a4fdbac2f32dd76291e63f21a347031243dbdf06d81d36db",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_06",
+      "filename": "sample_06.png",
+      "original_name": "5ecf00da-161c-4e2f-a525-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "70f59d0e4bd0e1955c544804a9a24dcbb1dc3e7d8e38ab929e3a16f853c31705",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_07",
+      "filename": "sample_07.png",
+      "original_name": "7e3c7e5d-172c-4a25-ad05-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "10f58312cc5d38b8c2a9d5dbf8401eba4d0469770ffd2c027c1712ac8ce4cac2",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_08",
+      "filename": "sample_08.png",
+      "original_name": "93228670-1f62-4e23-8993-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "53263df397f4f16e47d1a76f606b322f67e3a202142564a3c2d3b9160540697e",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_09",
+      "filename": "sample_09.png",
+      "original_name": "2aeb668a-251a-4f68-b52f-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "6b7cbe92d8f4742050a60648d70b4f45b5d281f2c254eeb3294e8efeb8694ad9",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_10",
+      "filename": "sample_10.png",
+      "original_name": "8887e405-f98f-43c6-a85e-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "2a9544e50b69d8ec387b6c6cf8dd806659a08912c212230fd4c18f655e5f7702",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_11",
+      "filename": "sample_11.png",
+      "original_name": "717efedc-6fcb-4509-895f-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "0bf3febc3454c77fa0206cf76a8598c7dc3071c581263db9e6de34a81bb2a07a",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_12",
+      "filename": "sample_12.png",
+      "original_name": "4946ed4e-9003-485c-830f-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "b601e6f95f5d3f4272dab45770232306223a971687197550b0ebf5a3cad78278",
+      "reviewed": true,
+      "empty_confirmed": true,
+      "notes": "",
+      "annotations": [],
+      "proposal_decisions": {}
+    },
+    {
+      "id": "sample_13",
+      "filename": "sample_13.png",
+      "original_name": "98f19e26-5889-4e8e-9175-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "c283f33c622e073136e1a07a27e4bfba3e642971e8fc4cbd41336c1d0b333be5",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_a2b3cc26-432f-437c-87ee-2f4078b77812",
+          "bbox": [
+            112,
+            101,
+            138,
+            140
+          ],
+          "category": "lesion",
+          "origin": "pl_13_00"
+        },
+        {
+          "id": "a_5689090e-7213-47e8-810d-66541ce1400c",
+          "bbox": [
+            43,
+            95,
+            60,
+            107
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_13_00": "accepted",
+        "pl_13_01": "rejected"
+      }
+    },
+    {
+      "id": "sample_14",
+      "filename": "sample_14.png",
+      "original_name": "a98a655f-a2f5-44eb-a73b-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "1fb9d4f0324330697d8a85872ed3593273b710cb1d7ea86ea949134a0c23cf09",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_27a84a16-c91a-42a0-88c0-18b0223ee7e4",
+          "bbox": [
+            31,
+            105,
+            44,
+            119
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_dc13f2c2-6e01-4da5-960f-d7cddc6f1289",
+          "bbox": [
+            49,
+            122,
+            57,
+            132
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_3927b7f2-e986-43ac-9b42-78728825eec4",
+          "bbox": [
+            145,
+            149,
+            164,
+            158
+          ],
+          "category": "lesion",
+          "origin": "pl_14_00"
+        },
+        {
+          "id": "a_2bdd09f7-a632-46b6-9f04-2aef896f9da8",
+          "bbox": [
+            80,
+            40,
+            92,
+            46
+          ],
+          "category": "lesion",
+          "origin": "pl_14_01"
+        },
+        {
+          "id": "a_c8aa2610-5e24-48f0-976f-ab928401f05a",
+          "bbox": [
+            68,
+            180,
+            76,
+            185
+          ],
+          "category": "lesion",
+          "origin": "pl_14_02"
+        },
+        {
+          "id": "a_bdfda6e8-e086-4832-bf70-876adca1b148",
+          "bbox": [
+            70,
+            27,
+            78,
+            32
+          ],
+          "category": "lesion",
+          "origin": "pl_14_03"
+        },
+        {
+          "id": "a_550699e0-908d-4aa0-89b8-73a91e1037fb",
+          "bbox": [
+            97,
+            166,
+            103,
+            171
+          ],
+          "category": "lesion",
+          "origin": "pl_14_04"
+        },
+        {
+          "id": "a_8609b027-29c8-4d6d-a364-12b2c236bbdb",
+          "bbox": [
+            109,
+            101,
+            114,
+            105
+          ],
+          "category": "lesion",
+          "origin": "pl_14_05"
+        },
+        {
+          "id": "a_f6881b6a-d554-49a9-9ffc-9c6605250546",
+          "bbox": [
+            147,
+            94,
+            150,
+            97
+          ],
+          "category": "lesion",
+          "origin": "pl_14_06"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_14_00": "accepted",
+        "pl_14_01": "accepted",
+        "pl_14_02": "accepted",
+        "pl_14_03": "accepted",
+        "pl_14_04": "accepted",
+        "pl_14_05": "accepted",
+        "pl_14_06": "accepted"
+      }
+    },
+    {
+      "id": "sample_15",
+      "filename": "sample_15.png",
+      "original_name": "73cf82cf-a099-4243-a7a6-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "9f54f27b9c5f922ef6486e0ea1b5b6734f926f819a53fa45089cf7da61f4b84d",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_23fe3698-4e61-48ff-a544-7aa812a6622c",
+          "bbox": [
+            95,
+            138,
+            119,
+            174
+          ],
+          "category": "lesion",
+          "origin": "pl_15_00"
+        },
+        {
+          "id": "a_d358e33d-d300-427c-8cc8-1323241176cb",
+          "bbox": [
+            78,
+            88,
+            85,
+            103
+          ],
+          "category": "lesion",
+          "origin": "pl_15_01"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_15_00": "accepted",
+        "pl_15_01": "accepted"
+      }
+    },
+    {
+      "id": "sample_16",
+      "filename": "sample_16.png",
+      "original_name": "0012b9d2-2130-4a06-a834-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "5ccb9dfc22557c357cd72f1a1cac91dc18b7c4bfec3a1e94fa83874b2166ddb2",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_0649abe3-f325-45b0-87a5-31ebd743b218",
+          "bbox": [
+            216,
+            144,
+            246,
+            176
+          ],
+          "category": "lesion",
+          "origin": "pl_16_01"
+        },
+        {
+          "id": "a_345f02b6-155f-43c5-9f3a-1530542d8c80",
+          "bbox": [
+            97,
+            87,
+            111,
+            111
+          ],
+          "category": "lesion",
+          "origin": "pl_16_02"
+        },
+        {
+          "id": "a_0c2aeb93-ff34-4115-99aa-534deeeb3087",
+          "bbox": [
+            91,
+            147,
+            101,
+            162
+          ],
+          "category": "lesion",
+          "origin": "pl_16_03"
+        },
+        {
+          "id": "a_8a36d0e6-7540-42ed-bdcd-9d939589500a",
+          "bbox": [
+            149,
+            76,
+            157,
+            87
+          ],
+          "category": "lesion",
+          "origin": "pl_16_04"
+        },
+        {
+          "id": "a_551515a4-ed18-4b78-9869-b42d6e0c1fcf",
+          "bbox": [
+            92,
+            187,
+            100,
+            195
+          ],
+          "category": "lesion",
+          "origin": "pl_16_05"
+        },
+        {
+          "id": "a_4f16c232-e0dc-4ffa-ac6a-1259f8f37b08",
+          "bbox": [
+            190,
+            24,
+            203,
+            45
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_a1899eb5-911b-4d93-bd6b-d30cdf5f3210",
+          "bbox": [
+            183,
+            50,
+            210,
+            79
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_5b021690-7ce3-4229-9cd9-892ed8b87cc2",
+          "bbox": [
+            176,
+            84,
+            195,
+            136
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_68fe6cab-691e-4216-873e-f3b451b5590c",
+          "bbox": [
+            153,
+            44,
+            173,
+            72
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_9f4af9e1-175d-4f43-9a63-664e660cd962",
+          "bbox": [
+            211,
+            101,
+            219,
+            114
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_16_01": "accepted",
+        "pl_16_02": "accepted",
+        "pl_16_03": "accepted",
+        "pl_16_04": "accepted",
+        "pl_16_05": "accepted",
+        "pl_16_00": "rejected"
+      }
+    },
+    {
+      "id": "sample_17",
+      "filename": "sample_17.png",
+      "original_name": "30542417-544f-4bd5-9fa6-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "822a2b1f20ea8fe5fd300941eedb001ce90480dffdc6577b320ca01e1af3c96f",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_828f2f8a-d050-4b07-a029-9b2474c92ad1",
+          "bbox": [
+            175,
+            173,
+            183,
+            183
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_f888f0ec-7da0-4e34-a2cc-f62be94b6233",
+          "bbox": [
+            149,
+            188,
+            162,
+            201
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_feba5b8d-5713-47ea-96ca-c0d0fd3000a1",
+          "bbox": [
+            54,
+            214,
+            64,
+            230
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_5a077617-1ef8-4b9e-9b0d-3437255f86b3",
+          "bbox": [
+            189,
+            148,
+            198,
+            163
+          ],
+          "category": "lesion",
+          "origin": "pl_17_00"
+        },
+        {
+          "id": "a_64e45a01-b68c-4984-b26c-85709a4d8860",
+          "bbox": [
+            106,
+            196,
+            117,
+            203
+          ],
+          "category": "lesion",
+          "origin": "pl_17_01"
+        },
+        {
+          "id": "a_3dd7418a-3ea1-422d-96b6-844f6bd3ae27",
+          "bbox": [
+            117,
+            139,
+            127,
+            145
+          ],
+          "category": "lesion",
+          "origin": "pl_17_02"
+        },
+        {
+          "id": "a_57882d4d-03e9-4cff-8b81-7d4be3b08637",
+          "bbox": [
+            167,
+            77,
+            174,
+            84
+          ],
+          "category": "lesion",
+          "origin": "pl_17_03"
+        },
+        {
+          "id": "a_3b42eea6-829e-4050-8a21-3f0bdf7b1968",
+          "bbox": [
+            54,
+            140,
+            64,
+            147
+          ],
+          "category": "lesion",
+          "origin": "pl_17_04"
+        },
+        {
+          "id": "a_466408ff-103a-424e-8cce-a84a96fc66a7",
+          "bbox": [
+            51,
+            157,
+            58,
+            163
+          ],
+          "category": "lesion",
+          "origin": "pl_17_05"
+        },
+        {
+          "id": "a_99075e55-9747-44ea-b634-25386655a9ef",
+          "bbox": [
+            50,
+            152,
+            54,
+            155
+          ],
+          "category": "lesion",
+          "origin": "pl_17_06"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_17_00": "accepted",
+        "pl_17_01": "accepted",
+        "pl_17_02": "accepted",
+        "pl_17_03": "accepted",
+        "pl_17_04": "accepted",
+        "pl_17_05": "accepted",
+        "pl_17_06": "accepted"
+      }
+    },
+    {
+      "id": "sample_18",
+      "filename": "sample_18.png",
+      "original_name": "603c6233-8cc0-4bb7-97f3-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "f5c56d2d9ff27d694b3db87821d969ba80a3297a8bf08766132e0a444685ee6c",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_19d70652-3502-4748-b202-ad71c3c2c5f3",
+          "bbox": [
+            186,
+            92,
+            199,
+            107
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_3640b8d4-0958-4286-9c82-c0533b722db9",
+          "bbox": [
+            123,
+            50,
+            136,
+            64
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_7e0af3c3-37d3-4ea2-8b99-208c9ae6586b",
+          "bbox": [
+            146,
+            27,
+            157,
+            37
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_eeeeb9fd-9be4-4db9-9973-bca2e764cc68",
+          "bbox": [
+            164,
+            37,
+            174,
+            47
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_0f4f5ebb-876d-4672-a8b0-f17733f1d18c",
+          "bbox": [
+            106,
+            112,
+            169,
+            148
+          ],
+          "category": "lesion",
+          "origin": "pl_18_00"
+        },
+        {
+          "id": "a_83c752ea-55a9-49cf-ab85-ec88c9d8e338",
+          "bbox": [
+            104,
+            191,
+            125,
+            207
+          ],
+          "category": "lesion",
+          "origin": "pl_18_01"
+        },
+        {
+          "id": "a_d8e78dbc-34a2-4821-bd9a-3869a6d97732",
+          "bbox": [
+            148,
+            170,
+            159,
+            183
+          ],
+          "category": "lesion",
+          "origin": "pl_18_02"
+        },
+        {
+          "id": "a_3f935827-8019-4f1e-9b11-5de2e7683c68",
+          "bbox": [
+            168,
+            158,
+            180,
+            174
+          ],
+          "category": "lesion",
+          "origin": "pl_18_03"
+        },
+        {
+          "id": "a_72730a6a-a32f-4db6-bd98-bb0eb1e45601",
+          "bbox": [
+            128,
+            103,
+            132,
+            110
+          ],
+          "category": "lesion",
+          "origin": "pl_18_09"
+        },
+        {
+          "id": "a_6544b78c-1930-48f9-abcb-14b7c945fd3b",
+          "bbox": [
+            66,
+            150,
+            74,
+            155
+          ],
+          "category": "lesion",
+          "origin": "pl_18_08"
+        },
+        {
+          "id": "a_e1f57b93-9dc4-4007-a8cb-ef4cfffc1a6d",
+          "bbox": [
+            129,
+            165,
+            139,
+            173
+          ],
+          "category": "lesion",
+          "origin": "pl_18_07"
+        },
+        {
+          "id": "a_1a6fc765-65e0-413d-b0c1-79f97c3141f7",
+          "bbox": [
+            83,
+            94,
+            97,
+            104
+          ],
+          "category": "lesion",
+          "origin": "pl_18_06"
+        },
+        {
+          "id": "a_ad143252-bea4-4a50-9d5e-48e4f2bbd601",
+          "bbox": [
+            186,
+            154,
+            195,
+            162
+          ],
+          "category": "lesion",
+          "origin": "pl_18_05"
+        },
+        {
+          "id": "a_545e4091-2cb1-4c90-a6c8-f2c4757c0cf1",
+          "bbox": [
+            32,
+            207,
+            53,
+            219
+          ],
+          "category": "lesion",
+          "origin": "pl_18_04"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_18_00": "accepted",
+        "pl_18_01": "accepted",
+        "pl_18_02": "accepted",
+        "pl_18_03": "accepted",
+        "pl_18_09": "accepted",
+        "pl_18_08": "accepted",
+        "pl_18_07": "accepted",
+        "pl_18_06": "accepted",
+        "pl_18_05": "accepted",
+        "pl_18_04": "accepted"
+      }
+    },
+    {
+      "id": "sample_19",
+      "filename": "sample_19.png",
+      "original_name": "3ecc0dc0-87b2-4f7f-894a-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "8e33a52d5a682527ae2f33639bc6ed7b04409b2b7126df53e508974f871e731a",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_5263b571-badf-4fb8-93e6-fddc15089f5b",
+          "bbox": [
+            100,
+            151,
+            123,
+            180
+          ],
+          "category": "lesion",
+          "origin": "pl_19_00"
+        },
+        {
+          "id": "a_cfc0d7d7-a3e9-48d0-aff6-6dc13c50361f",
+          "bbox": [
+            78,
+            111,
+            82,
+            116
+          ],
+          "category": "lesion",
+          "origin": "pl_19_01"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_19_00": "accepted",
+        "pl_19_01": "accepted"
+      }
+    },
+    {
+      "id": "sample_20",
+      "filename": "sample_20.png",
+      "original_name": "10c1d7a4-bd14-4961-9b96-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "100d4024a47022a25d9e3fe3e7dd1628de3eebf19d1b40b304a4a0b01b8707a7",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_7246cd6f-0afe-41aa-ae20-1730addbbb37",
+          "bbox": [
+            146,
+            68,
+            152,
+            78
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_0a122923-e1f1-4aee-a9e9-92be375c2c2c",
+          "bbox": [
+            62,
+            19,
+            89,
+            25
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_2771821d-d9af-43ae-b876-5a895c991c4f",
+          "bbox": [
+            153,
+            93,
+            156,
+            96
+          ],
+          "category": "lesion",
+          "origin": "pl_20_01"
+        },
+        {
+          "id": "a_98cb5dcb-5501-485e-87d8-83b84cab2165",
+          "bbox": [
+            138,
+            88,
+            150,
+            114
+          ],
+          "category": "lesion",
+          "origin": "pl_20_00"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_20_01": "accepted",
+        "pl_20_00": "accepted"
+      }
+    },
+    {
+      "id": "sample_21",
+      "filename": "sample_21.png",
+      "original_name": "511fb1ba-bef6-4144-9e05-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "d46c97f265a89d16e05b2764341816d006d5835813fd38880f9795d26400a574",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_f85bde60-50b3-439e-b434-7e8f3d6542bf",
+          "bbox": [
+            125,
+            201,
+            143,
+            212
+          ],
+          "category": "lesion",
+          "origin": "pl_21_15"
+        },
+        {
+          "id": "a_1273f66f-d273-44e9-b2a2-4cea5f63d213",
+          "bbox": [
+            199,
+            177,
+            213,
+            188
+          ],
+          "category": "lesion",
+          "origin": "pl_21_14"
+        },
+        {
+          "id": "a_7ef43b89-b170-45df-9e98-1dd9c8ae7271",
+          "bbox": [
+            30,
+            117,
+            42,
+            134
+          ],
+          "category": "lesion",
+          "origin": "pl_21_13"
+        },
+        {
+          "id": "a_f1121e83-c394-4b67-b621-7e2f6c0bab0e",
+          "bbox": [
+            68,
+            88,
+            81,
+            114
+          ],
+          "category": "lesion",
+          "origin": "pl_21_12"
+        },
+        {
+          "id": "a_bd2bb1cd-c728-421b-a1ff-0980209556bc",
+          "bbox": [
+            88,
+            103,
+            107,
+            125
+          ],
+          "category": "lesion",
+          "origin": "pl_21_11"
+        },
+        {
+          "id": "a_870055a8-c41a-42fe-85e9-b6380a87be12",
+          "bbox": [
+            59,
+            144,
+            88,
+            165
+          ],
+          "category": "lesion",
+          "origin": "pl_21_10"
+        },
+        {
+          "id": "a_cc85aea6-4448-4ade-adb9-b8a717eb777d",
+          "bbox": [
+            41,
+            75,
+            58,
+            102
+          ],
+          "category": "lesion",
+          "origin": "pl_21_09"
+        },
+        {
+          "id": "a_650e3987-8101-4214-af8f-26e194ddcd76",
+          "bbox": [
+            124,
+            64,
+            142,
+            76
+          ],
+          "category": "lesion",
+          "origin": "pl_21_08"
+        },
+        {
+          "id": "a_3cd656f7-2554-40d9-b0f3-a4c62f14543c",
+          "bbox": [
+            74,
+            169,
+            101,
+            202
+          ],
+          "category": "lesion",
+          "origin": "pl_21_07"
+        },
+        {
+          "id": "a_5cb40cf2-ab02-4c11-b19a-484976575d18",
+          "bbox": [
+            145,
+            56,
+            160,
+            89
+          ],
+          "category": "lesion",
+          "origin": "pl_21_06"
+        },
+        {
+          "id": "a_8647c3c5-e2ea-4588-a736-3578f9766894",
+          "bbox": [
+            145,
+            154,
+            186,
+            172
+          ],
+          "category": "lesion",
+          "origin": "pl_21_05"
+        },
+        {
+          "id": "a_8f6e59e4-1db6-4ad5-9f41-d2687889591c",
+          "bbox": [
+            119,
+            88,
+            140,
+            124
+          ],
+          "category": "lesion",
+          "origin": "pl_21_04"
+        },
+        {
+          "id": "a_3e50e072-a60a-4547-8ec4-7d713010731f",
+          "bbox": [
+            62,
+            48,
+            102,
+            72
+          ],
+          "category": "lesion",
+          "origin": "pl_21_03"
+        },
+        {
+          "id": "a_31860c4e-8188-4f9f-8483-c09453fc091c",
+          "bbox": [
+            128,
+            22,
+            163,
+            48
+          ],
+          "category": "lesion",
+          "origin": "pl_21_02"
+        },
+        {
+          "id": "a_cc7547b5-3a65-41f8-89ab-f5966a362537",
+          "bbox": [
+            120,
+            127,
+            163,
+            165
+          ],
+          "category": "lesion",
+          "origin": "pl_21_01"
+        },
+        {
+          "id": "a_67750f45-962e-40bf-861a-2ad2a46f36e1",
+          "bbox": [
+            144,
+            184,
+            215,
+            214
+          ],
+          "category": "lesion",
+          "origin": "pl_21_00"
+        },
+        {
+          "id": "a_57f22dae-9b94-484e-87c9-527babc5a1d3",
+          "bbox": [
+            170,
+            6,
+            184,
+            25
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_b0f32bb9-4818-4170-8014-f382a3c609ff",
+          "bbox": [
+            193,
+            50,
+            220,
+            78
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_b6b3987c-530d-4352-a973-500195dd5920",
+          "bbox": [
+            172,
+            88,
+            188,
+            99
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_9414d17a-e999-4795-ba86-9f50964aff32",
+          "bbox": [
+            215,
+            96,
+            233,
+            117
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_21_15": "accepted",
+        "pl_21_14": "accepted",
+        "pl_21_13": "accepted",
+        "pl_21_12": "accepted",
+        "pl_21_11": "accepted",
+        "pl_21_10": "accepted",
+        "pl_21_09": "accepted",
+        "pl_21_08": "accepted",
+        "pl_21_07": "accepted",
+        "pl_21_06": "accepted",
+        "pl_21_05": "accepted",
+        "pl_21_04": "accepted",
+        "pl_21_03": "accepted",
+        "pl_21_02": "accepted",
+        "pl_21_01": "accepted",
+        "pl_21_00": "accepted"
+      }
+    },
+    {
+      "id": "sample_22",
+      "filename": "sample_22.png",
+      "original_name": "22247648-1650-43d5-8a9b-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "7946d9f0f7efcfec5c316c8c132e418aea54bcf3b0673c74203b81d710f420c2",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_8f449e92-a3a8-403a-82ea-3ce0f600490e",
+          "bbox": [
+            93,
+            19,
+            150,
+            76
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_0764d22a-9417-44a2-bceb-2d6281befb38",
+          "bbox": [
+            142,
+            94,
+            189,
+            172
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_22_00": "rejected"
+      }
+    },
+    {
+      "id": "sample_23",
+      "filename": "sample_23.png",
+      "original_name": "dfd261ab-30ad-456c-93b3-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "7282978925980deebf02f3d1e21a0ac82c4737d81150d0de950ed7ea6b9ef960",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_aaa6ce8e-588e-4ffd-a5b3-1cdab1b35b11",
+          "bbox": [
+            136,
+            55,
+            169,
+            91
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_43a470d1-57da-448c-a297-ec034279f8ad",
+          "bbox": [
+            91,
+            32,
+            125,
+            59
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_fbf5f061-438a-40c7-adf9-fbf919714487",
+          "bbox": [
+            68,
+            75,
+            82,
+            85
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_0c37909a-1121-4e9a-a17a-da3d4b877629",
+          "bbox": [
+            153,
+            169,
+            161,
+            176
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_e792fd13-81c0-4cc1-80b1-636f1f03b3e8",
+          "bbox": [
+            175,
+            111,
+            188,
+            115
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_fa311d03-538a-41e7-9f0c-381918ad3939",
+          "bbox": [
+            163,
+            102,
+            167,
+            107
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_12afce26-b548-4e7b-bdcb-af1dc5eace4d",
+          "bbox": [
+            211,
+            172,
+            226,
+            185
+          ],
+          "category": "lesion",
+          "origin": "manual"
+        },
+        {
+          "id": "a_90b8aad1-5dd5-439d-be5d-6957dd8b8028",
+          "bbox": [
+            64,
+            156,
+            78,
+            164
+          ],
+          "category": "lesion",
+          "origin": "pl_23_05"
+        },
+        {
+          "id": "a_5f086790-c5c6-4210-8f61-00e604104eec",
+          "bbox": [
+            205,
+            123,
+            245,
+            152
+          ],
+          "category": "lesion",
+          "origin": "pl_23_02"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_23_00": "rejected",
+        "pl_23_01": "rejected",
+        "pl_23_04": "rejected",
+        "pl_23_06": "rejected",
+        "pl_23_07": "rejected",
+        "pl_23_08": "rejected",
+        "pl_23_03": "rejected",
+        "pl_23_05": "accepted",
+        "pl_23_02": "accepted"
+      }
+    },
+    {
+      "id": "sample_24",
+      "filename": "sample_24.png",
+      "original_name": "cd76ee4d-d516-4189-b40b-",
+      "width": 256,
+      "height": 256,
+      "pixel_sha256": "fe7c820de572dedb4949708fa311ee97c0610bef4f5bde82a4210fd2861b69b9",
+      "reviewed": true,
+      "empty_confirmed": false,
+      "notes": "",
+      "annotations": [
+        {
+          "id": "a_c9fd9fe1-bb26-4045-9055-e1db7becbd92",
+          "bbox": [
+            120,
+            62,
+            127,
+            67
+          ],
+          "category": "lesion",
+          "origin": "pl_24_00"
+        }
+      ],
+      "proposal_decisions": {
+        "pl_24_00": "accepted"
+      }
+    }
+  ]
+}

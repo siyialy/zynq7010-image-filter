@@ -17,7 +17,7 @@ if {![file exists $hdf]} {
     exit 1
 }
 if {![file exists $src]} {
-    puts "ERROR: 找不到源码目录 $src（应包含 main.c / sw_filter.c / sw_filter.h）"
+    puts "ERROR: 找不到源码目录 $src（应包含 main.c / sw_filter.c / sw_filter.h / pest.c / pest.h / pv_samples.h）"
     exit 1
 }
 
@@ -40,7 +40,7 @@ if {[catch {createapp -name img_filter_app -hwproject hw0 -proc ps7_cortexa9_0 -
 # 直接拷源码到应用的 src 目录（比 importsources 更稳，各版本 SDK 都适用）
 set app_src [file join $ws img_filter_app src]
 file mkdir $app_src
-foreach f {main.c sw_filter.c sw_filter.h} {
+foreach f {main.c sw_filter.c sw_filter.h pest.c pest.h pv_samples.h} {
     file copy -force [file join $src $f] $app_src
     puts "INFO: copied $f"
 }

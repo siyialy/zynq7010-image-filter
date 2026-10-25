@@ -12,11 +12,17 @@
 # =============================================================================
 
 set bit "D:/fpga_build/bits/system_top.bit"
-set elf "D:/fpga_build/sdk_ws/img_filter_app/Release/img_filter_app.elf"
-if {![file exists $elf]} {
+if {[llength $argv] > 1} { set bit [lindex $argv 1] }
+if {[llength $argv] > 0} {
+    set elf [lindex $argv 0]
+    puts "INFO: using explicitly selected ELF: $elf"
+} else {
+    set elf "D:/fpga_build/sdk_ws/img_filter_app/Release/img_filter_app.elf"
+}
+if {[llength $argv] == 0 && ![file exists $elf]} {
     set elf "D:/fpga_build/sdk_ws/img_filter_app/Debug/img_filter_app.elf"
     puts "INFO: Release ELF not found, using Debug"
-} else {
+} elseif {[llength $argv] == 0} {
     puts "INFO: using Release ELF (-O2)"
 }
 

@@ -17,7 +17,7 @@ setws $ws
 # 把最新源码拷进应用工程
 set app_src [file join $ws img_filter_app src]
 file mkdir $app_src
-foreach f {main.c sw_filter.c sw_filter.h} {
+foreach f {main.c sw_filter.c sw_filter.h pest.c pest.h pv_samples.h} {
     file copy -force [file join $src $f] $app_src
     puts "INFO: copied $f"
 }

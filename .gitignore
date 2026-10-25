@@ -62,3 +62,40 @@ RESUME.md
 board/**/*.bit
 board/**/*.hdf
 board/**/*.elf
+
+# ---------- V2.x 新增：构建产物与中间数据（不公开） ----------
+build/pl_detector*/
+build/pest_review/
+build/display_review/
+build/leaf_review/
+build/recall_review/
+build/precision_review/
+build/precision_v23/
+build/algorithm_v25/
+build/image_review/
+build/*vectors*/
+build/*.json
+build/*.elf
+build/*.dll
+build/*.bin
+build/*.npz
+usage_statistics_webtalk.*
+
+# 24 张样本的内嵌数据（16.9 MB，由 tools/pv2c.py 从 PlantVillage 生成）
+ps_app/pv_samples.h
+
+# 实验实拍照片（30 MB，只保留报告用到的那 2 张）
+report/photos/实验结果图像/
+
+# 标注工具的运行报告图
+annotation_tool/reports/
+
+# 本地快捷方式（中文文件名，仅本机使用）
+启动病斑演示.cmd
+评估病斑标注.cmd
+打开病斑标注工具.cmd
+# 演示视频与临时报表素材（108 MB，单独作为 Release 附件）
+report/*.mp4
+report/*.pdf
+report/leaf_lesion_detection_report_v26.docx
+build/report_v26_template/

@@ -1,0 +1,2082 @@
+[
+  {
+    "sample": 13,
+    "bbox": [
+      112,
+      101,
+      138,
+      140
+    ],
+    "area": 633,
+    "score": 2893,
+    "classic": 382,
+    "green": [
+      100,
+      98,
+      100,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 13,
+    "bbox": [
+      126,
+      164,
+      139,
+      178
+    ],
+    "area": 104,
+    "score": 395,
+    "classic": 0,
+    "green": [
+      55,
+      0,
+      0,
+      48
+    ],
+    "halo": [
+      20,
+      92,
+      95,
+      5
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": true
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      70,
+      27,
+      78,
+      32
+    ],
+    "area": 35,
+    "score": 122,
+    "classic": 23,
+    "green": [
+      83,
+      100,
+      84,
+      92
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      70,
+      100,
+      80,
+      84
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      80,
+      40,
+      92,
+      46
+    ],
+    "area": 64,
+    "score": 189,
+    "classic": 55,
+    "green": [
+      100,
+      93,
+      100,
+      60
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      93,
+      91,
+      100,
+      50
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      147,
+      94,
+      150,
+      97
+    ],
+    "area": 9,
+    "score": 31,
+    "classic": 4,
+    "green": [
+      82,
+      82,
+      6,
+      73
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      71,
+      62,
+      0,
+      60
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      109,
+      101,
+      114,
+      105
+    ],
+    "area": 19,
+    "score": 70,
+    "classic": 1,
+    "green": [
+      100,
+      93,
+      95,
+      95
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      93,
+      86,
+      85,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      145,
+      149,
+      164,
+      158
+    ],
+    "area": 105,
+    "score": 250,
+    "classic": 81,
+    "green": [
+      93,
+      95,
+      100,
+      66
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      88,
+      93,
+      100,
+      53
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      97,
+      166,
+      103,
+      171
+    ],
+    "area": 26,
+    "score": 116,
+    "classic": 5,
+    "green": [
+      100,
+      96,
+      100,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      90,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 14,
+    "bbox": [
+      68,
+      180,
+      76,
+      185
+    ],
+    "area": 34,
+    "score": 132,
+    "classic": 21,
+    "green": [
+      100,
+      90,
+      92,
+      60
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      78,
+      84,
+      56
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 15,
+    "bbox": [
+      78,
+      88,
+      85,
+      103
+    ],
+    "area": 88,
+    "score": 448,
+    "classic": 32,
+    "green": [
+      27,
+      7,
+      0,
+      72
+    ],
+    "halo": [
+      18,
+      21,
+      8,
+      0
+    ],
+    "tissue": [
+      98,
+      50,
+      8,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 15,
+    "bbox": [
+      95,
+      138,
+      119,
+      174
+    ],
+    "area": 431,
+    "score": 1398,
+    "classic": 188,
+    "green": [
+      96,
+      99,
+      86,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 16,
+    "bbox": [
+      172,
+      23,
+      223,
+      139
+    ],
+    "area": 2037,
+    "score": 12629,
+    "classic": 647,
+    "green": [
+      10,
+      100,
+      43,
+      62
+    ],
+    "halo": [
+      15,
+      0,
+      28,
+      0
+    ],
+    "tissue": [
+      69,
+      100,
+      99,
+      91
+    ],
+    "published": false,
+    "false_positive": false
+  },
+  {
+    "sample": 16,
+    "bbox": [
+      149,
+      76,
+      157,
+      87
+    ],
+    "area": 64,
+    "score": 411,
+    "classic": 15,
+    "green": [
+      45,
+      98,
+      92,
+      85
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 16,
+    "bbox": [
+      97,
+      87,
+      111,
+      111
+    ],
+    "area": 164,
+    "score": 1076,
+    "classic": 52,
+    "green": [
+      5,
+      64,
+      0,
+      85
+    ],
+    "halo": [
+      18,
+      10,
+      10,
+      3
+    ],
+    "tissue": [
+      48,
+      94,
+      10,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 16,
+    "bbox": [
+      216,
+      144,
+      246,
+      176
+    ],
+    "area": 580,
+    "score": 3548,
+    "classic": 257,
+    "green": [
+      62,
+      40,
+      86,
+      17
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      6
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      61
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 16,
+    "bbox": [
+      91,
+      147,
+      101,
+      162
+    ],
+    "area": 94,
+    "score": 526,
+    "classic": 2,
+    "green": [
+      32,
+      15,
+      10,
+      73
+    ],
+    "halo": [
+      1,
+      5,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 16,
+    "bbox": [
+      92,
+      187,
+      100,
+      195
+    ],
+    "area": 50,
+    "score": 353,
+    "classic": 8,
+    "green": [
+      28,
+      25,
+      25,
+      50
+    ],
+    "halo": [
+      0,
+      1,
+      5,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      167,
+      77,
+      174,
+      84
+    ],
+    "area": 39,
+    "score": 197,
+    "classic": 7,
+    "green": [
+      96,
+      100,
+      100,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      94
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      117,
+      139,
+      127,
+      145
+    ],
+    "area": 50,
+    "score": 214,
+    "classic": 18,
+    "green": [
+      68,
+      100,
+      100,
+      100
+    ],
+    "halo": [
+      8,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      54,
+      140,
+      64,
+      147
+    ],
+    "area": 47,
+    "score": 190,
+    "classic": 0,
+    "green": [
+      31,
+      15,
+      0,
+      77
+    ],
+    "halo": [
+      37,
+      57,
+      45,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      189,
+      148,
+      198,
+      163
+    ],
+    "area": 81,
+    "score": 358,
+    "classic": 3,
+    "green": [
+      80,
+      3,
+      93,
+      2
+    ],
+    "halo": [
+      3,
+      16,
+      0,
+      20
+    ],
+    "tissue": [
+      100,
+      96,
+      100,
+      28
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      50,
+      152,
+      54,
+      155
+    ],
+    "area": 12,
+    "score": 40,
+    "classic": 0,
+    "green": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "halo": [
+      80,
+      75,
+      6,
+      100
+    ],
+    "tissue": [
+      100,
+      92,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      51,
+      157,
+      58,
+      163
+    ],
+    "area": 34,
+    "score": 176,
+    "classic": 3,
+    "green": [
+      0,
+      45,
+      0,
+      40
+    ],
+    "halo": [
+      81,
+      14,
+      76,
+      20
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 17,
+    "bbox": [
+      106,
+      196,
+      117,
+      203
+    ],
+    "area": 51,
+    "score": 294,
+    "classic": 2,
+    "green": [
+      100,
+      88,
+      100,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      83,
+      94,
+      97,
+      104
+    ],
+    "area": 87,
+    "score": 351,
+    "classic": 0,
+    "green": [
+      100,
+      100,
+      96,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      128,
+      103,
+      132,
+      110
+    ],
+    "area": 25,
+    "score": 96,
+    "classic": 0,
+    "green": [
+      100,
+      72,
+      88,
+      34
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      2
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      106,
+      112,
+      169,
+      148
+    ],
+    "area": 1144,
+    "score": 5112,
+    "classic": 784,
+    "green": [
+      92,
+      93,
+      41,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      75,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      66,
+      150,
+      74,
+      155
+    ],
+    "area": 30,
+    "score": 159,
+    "classic": 0,
+    "green": [
+      93,
+      100,
+      100,
+      92
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      186,
+      154,
+      195,
+      162
+    ],
+    "area": 55,
+    "score": 436,
+    "classic": 0,
+    "green": [
+      75,
+      73,
+      25,
+      2
+    ],
+    "halo": [
+      3,
+      0,
+      5,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      168,
+      158,
+      180,
+      174
+    ],
+    "area": 80,
+    "score": 597,
+    "classic": 0,
+    "green": [
+      100,
+      0,
+      70,
+      28
+    ],
+    "halo": [
+      0,
+      13,
+      2,
+      1
+    ],
+    "tissue": [
+      100,
+      88,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      129,
+      165,
+      139,
+      173
+    ],
+    "area": 56,
+    "score": 258,
+    "classic": 23,
+    "green": [
+      100,
+      100,
+      100,
+      62
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      5
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      148,
+      170,
+      159,
+      183
+    ],
+    "area": 104,
+    "score": 758,
+    "classic": 16,
+    "green": [
+      32,
+      9,
+      66,
+      21
+    ],
+    "halo": [
+      6,
+      13,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      88,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      104,
+      191,
+      125,
+      207
+    ],
+    "area": 255,
+    "score": 1339,
+    "classic": 59,
+    "green": [
+      100,
+      68,
+      100,
+      41
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 18,
+    "bbox": [
+      32,
+      207,
+      53,
+      219
+    ],
+    "area": 115,
+    "score": 471,
+    "classic": 6,
+    "green": [
+      98,
+      64,
+      10,
+      80
+    ],
+    "halo": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "tissue": [
+      100,
+      74,
+      46,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 19,
+    "bbox": [
+      78,
+      111,
+      82,
+      116
+    ],
+    "area": 18,
+    "score": 55,
+    "classic": 1,
+    "green": [
+      27,
+      5,
+      0,
+      80
+    ],
+    "halo": [
+      42,
+      35,
+      8,
+      0
+    ],
+    "tissue": [
+      95,
+      65,
+      8,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 19,
+    "bbox": [
+      100,
+      151,
+      123,
+      180
+    ],
+    "area": 205,
+    "score": 912,
+    "classic": 71,
+    "green": [
+      100,
+      90,
+      91,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 20,
+    "bbox": [
+      138,
+      88,
+      150,
+      114
+    ],
+    "area": 176,
+    "score": 1456,
+    "classic": 42,
+    "green": [
+      32,
+      87,
+      90,
+      7
+    ],
+    "halo": [
+      47,
+      0,
+      0,
+      37
+    ],
+    "tissue": [
+      100,
+      78,
+      85,
+      51
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 20,
+    "bbox": [
+      153,
+      93,
+      156,
+      96
+    ],
+    "area": 9,
+    "score": 96,
+    "classic": 9,
+    "green": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "halo": [
+      48,
+      34,
+      46,
+      13
+    ],
+    "tissue": [
+      48,
+      37,
+      100,
+      13
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      128,
+      22,
+      163,
+      48
+    ],
+    "area": 381,
+    "score": 2670,
+    "classic": 120,
+    "green": [
+      0,
+      97,
+      17,
+      36
+    ],
+    "halo": [
+      9,
+      0,
+      6,
+      25
+    ],
+    "tissue": [
+      16,
+      100,
+      30,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      62,
+      48,
+      102,
+      72
+    ],
+    "area": 341,
+    "score": 2328,
+    "classic": 101,
+    "green": [
+      0,
+      92,
+      4,
+      70
+    ],
+    "halo": [
+      13,
+      1,
+      9,
+      9
+    ],
+    "tissue": [
+      13,
+      100,
+      26,
+      88
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      145,
+      56,
+      160,
+      89
+    ],
+    "area": 298,
+    "score": 1558,
+    "classic": 115,
+    "green": [
+      86,
+      92,
+      74,
+      92
+    ],
+    "halo": [
+      1,
+      2,
+      5,
+      1
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      124,
+      64,
+      142,
+      76
+    ],
+    "area": 158,
+    "score": 1236,
+    "classic": 82,
+    "green": [
+      94,
+      86,
+      85,
+      65
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      3
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      41,
+      75,
+      58,
+      102
+    ],
+    "area": 158,
+    "score": 1099,
+    "classic": 45,
+    "green": [
+      5,
+      89,
+      0,
+      90
+    ],
+    "halo": [
+      8,
+      2,
+      5,
+      0
+    ],
+    "tissue": [
+      27,
+      100,
+      6,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      68,
+      88,
+      81,
+      114
+    ],
+    "area": 208,
+    "score": 927,
+    "classic": 28,
+    "green": [
+      97,
+      100,
+      87,
+      100
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      119,
+      88,
+      140,
+      124
+    ],
+    "area": 385,
+    "score": 2191,
+    "classic": 201,
+    "green": [
+      100,
+      92,
+      92,
+      91
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      2
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      88,
+      103,
+      107,
+      125
+    ],
+    "area": 212,
+    "score": 954,
+    "classic": 3,
+    "green": [
+      87,
+      100,
+      100,
+      100
+    ],
+    "halo": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      30,
+      117,
+      42,
+      134
+    ],
+    "area": 126,
+    "score": 923,
+    "classic": 41,
+    "green": [
+      90,
+      70,
+      90,
+      91
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      120,
+      127,
+      163,
+      165
+    ],
+    "area": 639,
+    "score": 3197,
+    "classic": 318,
+    "green": [
+      85,
+      61,
+      100,
+      42
+    ],
+    "halo": [
+      2,
+      21,
+      0,
+      19
+    ],
+    "tissue": [
+      99,
+      94,
+      100,
+      83
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      59,
+      144,
+      88,
+      165
+    ],
+    "area": 251,
+    "score": 1008,
+    "classic": 30,
+    "green": [
+      75,
+      92,
+      80,
+      100
+    ],
+    "halo": [
+      19,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      145,
+      154,
+      186,
+      172
+    ],
+    "area": 456,
+    "score": 2149,
+    "classic": 256,
+    "green": [
+      70,
+      100,
+      78,
+      85
+    ],
+    "halo": [
+      5,
+      0,
+      5,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      74,
+      169,
+      101,
+      202
+    ],
+    "area": 273,
+    "score": 1329,
+    "classic": 44,
+    "green": [
+      100,
+      80,
+      90,
+      100
+    ],
+    "halo": [
+      0,
+      4,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      199,
+      177,
+      213,
+      188
+    ],
+    "area": 116,
+    "score": 769,
+    "classic": 62,
+    "green": [
+      93,
+      82,
+      76,
+      89
+    ],
+    "halo": [
+      0,
+      2,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      144,
+      184,
+      215,
+      214
+    ],
+    "area": 987,
+    "score": 5564,
+    "classic": 582,
+    "green": [
+      78,
+      67,
+      66,
+      30
+    ],
+    "halo": [
+      10,
+      1,
+      18,
+      4
+    ],
+    "tissue": [
+      94,
+      73,
+      100,
+      50
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 21,
+    "bbox": [
+      125,
+      201,
+      143,
+      212
+    ],
+    "area": 142,
+    "score": 569,
+    "classic": 33,
+    "green": [
+      93,
+      98,
+      100,
+      56
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 22,
+    "bbox": [
+      115,
+      80,
+      176,
+      196
+    ],
+    "area": 3227,
+    "score": 13806,
+    "classic": 1966,
+    "green": [
+      0,
+      32,
+      82,
+      8
+    ],
+    "halo": [
+      22,
+      6,
+      0,
+      36
+    ],
+    "tissue": [
+      22,
+      60,
+      89,
+      47
+    ],
+    "published": false,
+    "false_positive": false
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      83,
+      2,
+      182,
+      138
+    ],
+    "area": 4771,
+    "score": 39836,
+    "classic": 2407,
+    "green": [
+      0,
+      29,
+      38,
+      2
+    ],
+    "halo": [
+      2,
+      20,
+      10,
+      28
+    ],
+    "tissue": [
+      2,
+      91,
+      71,
+      73
+    ],
+    "published": false,
+    "false_positive": false
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      153,
+      52,
+      228,
+      138
+    ],
+    "area": 2084,
+    "score": 14562,
+    "classic": 0,
+    "green": [
+      0,
+      25,
+      0,
+      22
+    ],
+    "halo": [
+      15,
+      15,
+      95,
+      7
+    ],
+    "tissue": [
+      60,
+      80,
+      97,
+      55
+    ],
+    "published": false,
+    "false_positive": false
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      205,
+      123,
+      245,
+      152
+    ],
+    "area": 648,
+    "score": 4139,
+    "classic": 211,
+    "green": [
+      7,
+      44,
+      48,
+      31
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      134,
+      147,
+      143,
+      156
+    ],
+    "area": 47,
+    "score": 98,
+    "classic": 0,
+    "green": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "halo": [
+      46,
+      100,
+      80,
+      88
+    ],
+    "tissue": [
+      46,
+      100,
+      100,
+      97
+    ],
+    "published": true,
+    "false_positive": true
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      139,
+      155,
+      147,
+      164
+    ],
+    "area": 43,
+    "score": 98,
+    "classic": 0,
+    "green": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "halo": [
+      86,
+      91,
+      100,
+      0
+    ],
+    "tissue": [
+      98,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": true
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      64,
+      156,
+      78,
+      164
+    ],
+    "area": 69,
+    "score": 236,
+    "classic": 0,
+    "green": [
+      66,
+      58,
+      82,
+      60
+    ],
+    "halo": [
+      7,
+      1,
+      0,
+      5
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      136,
+      166,
+      170,
+      186
+    ],
+    "area": 309,
+    "score": 842,
+    "classic": 0,
+    "green": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "halo": [
+      30,
+      10,
+      100,
+      30
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": false,
+    "false_positive": false
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      25,
+      174,
+      31,
+      180
+    ],
+    "area": 31,
+    "score": 404,
+    "classic": 0,
+    "green": [
+      26,
+      0,
+      0,
+      73
+    ],
+    "halo": [
+      18,
+      70,
+      73,
+      0
+    ],
+    "tissue": [
+      100,
+      94,
+      73,
+      100
+    ],
+    "published": true,
+    "false_positive": true
+  },
+  {
+    "sample": 23,
+    "bbox": [
+      134,
+      190,
+      137,
+      193
+    ],
+    "area": 9,
+    "score": 20,
+    "classic": 0,
+    "green": [
+      0,
+      5,
+      0,
+      0
+    ],
+    "halo": [
+      85,
+      5,
+      100,
+      13
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": true
+  },
+  {
+    "sample": 24,
+    "bbox": [
+      120,
+      62,
+      127,
+      67
+    ],
+    "area": 28,
+    "score": 309,
+    "classic": 0,
+    "green": [
+      87,
+      74,
+      64,
+      72
+    ],
+    "halo": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "tissue": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "published": true,
+    "false_positive": false
+  }
+]

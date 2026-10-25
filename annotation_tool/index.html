@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>叶片病斑 · 人工标注</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><div class="eyebrow">FPGA · DEVELOPMENT DATASET</div><h1>叶片病斑 · 人工标注</h1></div><div class="header-actions"><span id="progress"></span><button id="export" class="primary">导出标注 JSON</button><button id="import">导入标注</button><input id="importFile" type="file" accept=".json,application/json" hidden></div></header>
+<div id="notice" role="status">所有图片均待审核。橙色虚线是算法候选，不是真值。</div>
+<main><aside class="samples"><h2>24 张原始 RGB</h2><p class="muted">开发集 · 不作为独立测试集</p><div id="sampleList"></div></aside>
+<section class="workbench"><div class="sample-heading"><div><h2 id="sampleTitle"></h2><p id="sampleMeta" class="muted"></p></div><div><button id="previous">上一张</button><button id="next">下一张</button></div></div>
+<div class="toolbar"><button id="selectMode" class="active">选择 / 调整</button><button id="drawMode">新增框</button><select id="drawCategory" aria-label="新增框类别"><option value="lesion">病斑</option><option value="uncertain">不确定区域</option><option value="background">背景 / 非病斑</option></select><button id="undo">撤销</button><select id="zoom" aria-label="画布缩放"><option value="1">适应画布</option><option value="2">放大 2 倍</option><option value="4">放大 4 倍</option></select><label><input type="checkbox" id="showProposals" checked>显示候选</label></div>
+<div class="canvas-wrap" id="canvasViewport"><canvas id="canvas" width="1024" height="1024" tabindex="0" aria-label="原始叶片图片标注画布"></canvas><div id="loading">正在载入原图…</div></div>
+<div class="legend"><span class="green">实线：人工病斑</span><span class="orange">虚线：待确认候选</span><span class="purple">紫色：不确定</span><span class="blue">蓝色：背景 / 非病斑</span></div>
+<p class="help">新增：拖出矩形。调整：点选框后拖动，拖四角可缩放，Alt+拖动可移动小框。右侧可精确填写坐标。Delete 删除人工框，Ctrl+Z 撤销。坐标始终对应原始 256×256 图片。</p></section>
+<aside class="inspector"><section class="panel"><h2>选中的区域</h2><div id="selection"></div></section>
+<section class="panel"><h2 id="truthTitle">人工标注</h2><div id="truthList"></div></section>
+<section class="panel"><h2 id="proposalTitle">待确认候选</h2><p class="muted">逐个接受或排除；漏掉的病斑请手动画框。</p><div id="proposalList"></div><details><summary id="rejectedTitle">已排除候选</summary><div id="rejectedList"></div></details></section>
+<section class="panel review"><h2>整张审核</h2><textarea id="notes" rows="2" maxlength="3000" placeholder="备注：模糊位置、阴影、难以判断的区域…" aria-label="图片审核备注"></textarea><label id="emptyLabel"><input type="checkbox" id="confirmEmpty">我已检查整张图，未标出可靠病斑</label><button id="review" class="primary">标记本张审核完成</button><p class="muted">必须检查整张图。没有病斑框不等于叶片健康；未审核图片不计入定位评估。</p><span id="saveState" class="muted"></span></section></aside></main>
+<script src="dataset.js"></script><script src="model.js"></script><script src="app.js"></script></body></html>

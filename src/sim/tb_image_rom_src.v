@@ -36,14 +36,23 @@ localparam X0     = (DISP_W - IMG_W*SCALE) / 2;    // 水平刚好铺满 = 0
 
     initial $readmemh("image_gray.mem", ref);
 
+    wire [16:0] raddr;
+    wire [7:0]  rdata;
+    wire        mark_o;
+
+    // 用参考图模拟外部缓冲区（同步读，1 拍延迟，与 img_buf 一致）
+    reg [7:0] rdata_q;
+    always @(posedge clk) rdata_q <= ref[raddr];
+    assign rdata = rdata_q;
+
     image_rom_src #(
         .IMG_W(IMG_W), .IMG_H(IMG_H), .SCALE(SCALE),
-        .DISP_W(DISP_W), .DISP_H(DISP_H),
-        .MEM_FILE("image_gray.mem")
+        .DISP_W(DISP_W), .DISP_H(DISP_H)
     ) u_rom (
         .clk(clk), .rst_n(rst_n),
         .de(de), .x(x), .y(y),
-        .de_o(de_o), .x_o(x_o), .y_o(y_o), .rgb_o(rgb_o)
+        .raddr(raddr), .rdata(rdata),
+        .de_o(de_o), .x_o(x_o), .y_o(y_o), .rgb_o(rgb_o), .mark_o(mark_o)
     );
 
     initial clk = 1'b0;

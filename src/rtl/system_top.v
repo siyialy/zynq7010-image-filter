@@ -72,6 +72,36 @@ module system_top (
     wire        filter_en_axi;
     wire [31:0] frame_cnt_axi;    // PL 数出来的帧数（已同步到 AXI 域）
 
+    // PS 上传图像的写接口（AXI 时钟域）
+    wire        img_we;
+    wire [16:0] img_addr;
+    wire [7:0]  img_data;
+
+    // 图像缓冲区读接口（像素时钟域）
+    wire [16:0] buf_raddr;
+    wire [7:0]  buf_rdata;
+
+    // 标框配置：AXI 域 → 像素域
+`ifdef PL_RELEASE_25
+    localparam BOX_W=1536;
+`elsif PL_RELEASE_22
+    localparam BOX_W=768;
+`else
+    localparam BOX_W=384;
+`endif
+    wire [383:0] box_bus_axi;
+    wire [BOX_W-1:0] box_bus_pix;
+    wire         commit_tog;
+    wire [BOX_W-1:0] detector_boxes;
+    wire [31:0] detector_status;
+    wire detector_commit,detector_active,detector_display_hold;
+    wire frame_tick;
+    // Legacy AXI overlay supplies only a four-bit count. Reserved bits 7:5
+    // may be unconnected inside the original block design; drive them here.
+    wire [BOX_W-1:0] selected_boxes=detector_active?detector_boxes:
+        {{(BOX_W-384){1'b0}},box_bus_axi[383:8],3'b000,box_bus_axi[4:0]};
+    wire selected_commit=detector_commit ^ commit_tog;
+
     system_wrapper u_bd (
         // DDR / MIO
         .DDR_addr        (DDR_addr),
@@ -105,7 +135,34 @@ module system_top (
         .threshold       (thresh_axi),
         .filter_en       (filter_en_axi),
         .frame_cnt       (frame_cnt_axi),
-        .status          (32'd0)
+        .status          (detector_status),
+
+        // 图像上传写接口
+        .img_we          (img_we),
+        .img_addr        (img_addr),
+        .img_data        (img_data),
+
+        // 标框配置（AXI 域）
+        .box_bus         (box_bus_axi),
+        .commit_tog      (commit_tog)
+    );
+
+    // Register the AXI upload stream before detector address/command decode.
+    reg detector_we;reg [16:0] detector_addr;reg [7:0] detector_data;
+    always @(posedge axi_clk or negedge axi_rst_n)begin
+        if(!axi_rst_n)begin detector_we<=0;detector_addr<=0;detector_data<=0;end
+        else begin detector_we<=img_we;detector_addr<=img_addr;detector_data<=img_data;end
+    end
+`ifdef PL_RELEASE_25
+    pl_detector_v25 u_detector (
+`else
+    pl_pest_detector u_detector (
+`endif
+        .clk(axi_clk),.rst_n(axi_rst_n),
+        .upload_we(detector_we),.upload_addr(detector_addr),.upload_data(detector_data),
+        .overlay_enable(box_bus_axi[0]),.box_bus(detector_boxes),
+        .commit_toggle(detector_commit),.detector_active(detector_active),.status(detector_status),
+        .display_hold(detector_display_hold)
     );
 
     // ------------------------------------------------------------------
@@ -190,9 +247,17 @@ module system_top (
         else if (key1_press)     src_sel_r <= ~src_sel_r;
     end
 
-    // KEY0 在 PS 模式下作为"本地强制切模式"的备份（可选，便于脱离 PS 调试）
-    // 这里保持简单：模式只由 PS 决定，KEY0 暂不使用
-    // （如果 PS 程序没跑，PL 会用 mode=0 灰度显示）
+    // ------------------------------------------------------------------
+    // KEY0：本地切滤波模式（不用碰电脑也能演示四种效果）
+    //   key_sel = 0 → 交还 PS 控制（串口 0/1/2/3）
+    //   key_sel = 1 → 灰度    2 → 均值    3 → 高斯    4 → Sobel
+    //   每按一次 +1，超过 4 回到 0
+    // ------------------------------------------------------------------
+    reg [2:0] key_sel;
+    always @(posedge pixel_clk or negedge rst_pix_n) begin
+        if (!rst_pix_n)      key_sel <= 3'd0;
+        else if (key0_press) key_sel <= (key_sel >= 3'd4) ? 3'd0 : key_sel + 1'b1;
+    end
 
     // ------------------------------------------------------------------
     // 5. 视频流水线
@@ -202,23 +267,63 @@ module system_top (
     wire        frame_start;
 
     // filter_en = 0 时强制灰度（直通），= 1 时用 PS 指定的模式
-    wire [2:0] mode_eff = en_pix ? mode_pix : 3'd0;
+    // 一旦按过 KEY0（key_sel != 0），就改由板载按键控制
+    wire [2:0] mode_eff = (key_sel != 3'd0) ? (key_sel - 3'd1)
+                                            : (en_pix ? mode_pix : 3'd0);
+
+    // ------------------------------------------------------------------
+    // 4.5 图像缓冲区（PS 可写，A 口给显示读、B 口给 AXI 写）
+    // ------------------------------------------------------------------
+    img_buf #(
+        .IMG_W    (320),
+        .IMG_H    (240),
+        .EXTRA_PIX(1920),
+        .MEM_FILE ("image_gray.mem")
+    ) u_imgbuf (
+        .clk_pix  (pixel_clk),
+        .addr_pix (buf_raddr),
+        .data_pix (buf_rdata),
+        .clk_axi  (axi_clk),
+        .we       (img_we),
+        .addr_wr  (img_addr),
+        .data_wr  (img_data)
+    );
 
     video_pipeline #(
         .H_VISIBLE (1280), .H_FP (110), .H_SYNC (40), .H_BP (220),
         .V_VISIBLE (720),  .V_FP (5),   .V_SYNC (5),  .V_BP (20),
         .H_SYNC_POL(1'b0), .V_SYNC_POL(1'b0),
         .DEPTH     (2048),
-        .LAT       (12)
+        .LAT       (12),
+        .IMG_SCALE (3),         /* 960x720 centered in 1280x720; preserve 4:3 aspect */
+        .SOFT_BG   (1)          /* remaining 160px on each side use blurred image backdrop */
     ) u_pipeline (
-        .clk_pix  (pixel_clk),
-        .rst_n    (rst_pix_n),
-        .mode     (mode_eff),
-        .src_sel  (src_sel_r),
-        .rgb_out  (rgb_out),
-        .hs_out   (hs_out),
-        .vs_out   (vs_out),
-        .de_out   (de_out)
+        .clk_pix   (pixel_clk),
+        .rst_n     (rst_pix_n),
+        .mode      (mode_eff),
+        .src_sel   (src_sel_r),
+        .box_bus   (box_bus_pix),
+        .display_hold(detector_display_hold),
+        .buf_raddr (buf_raddr),
+        .buf_rdata (buf_rdata),
+        .rgb_out   (rgb_out),
+        .hs_out    (hs_out),
+        .vs_out    (vs_out),
+        .de_out    (de_out)
+    );
+
+    // ------------------------------------------------------------------
+    // 4.6 标框配置跨时钟域：AXI(100M) → 像素(75M)
+    // ------------------------------------------------------------------
+    cdc_boxes #(.W(BOX_W),.FRAME_LATCH(1)) u_cdc_box (
+        .clk_axi    (axi_clk),
+        .rst_axi_n  (axi_rst_n),
+        .bus_in     (selected_boxes),
+        .commit_tog (selected_commit),
+        .clk_pix    (pixel_clk),
+        .rst_pix_n  (rst_pix_n),
+        .frame_tick (frame_tick),
+        .bus_out    (box_bus_pix)
     );
 
     // 帧起始：从流水线内部的时序发生器引出（每帧一个脉冲）
@@ -229,7 +334,7 @@ module system_top (
         if (!rst_pix_n) vs_d <= 1'b1;
         else            vs_d <= vs_out;
     end
-    wire frame_tick = vs_out & ~vs_d;
+    assign frame_tick = vs_out & ~vs_d;
 
     // ------------------------------------------------------------------
     // 6. 帧计数：像素域 → AXI 域

@@ -23,9 +23,13 @@ set rtl_files [list \
     [file join $proj_root src rtl video_timing_gen.v] \
     [file join $proj_root src rtl test_pattern.v] \
     [file join $proj_root src rtl img_filter_3x3.v] \
+    [file join $proj_root src rtl img_buf.v] \
+    [file join $proj_root src rtl pl_pest_detector.v] \
     [file join $proj_root src rtl image_rom_src.v] \
+    [file join $proj_root src rtl box_overlay.v] \
     [file join $proj_root src rtl video_pipeline.v] \
     [file join $proj_root src rtl cdc_cfg.v] \
+    [file join $proj_root src rtl cdc_boxes.v] \
     [file join $proj_root src rtl cdc_frame_cnt.v] \
     [file join $proj_root src rtl asyn_rst_syn.v] \
     [file join $proj_root src rtl dvi_encoder.v] \
@@ -101,10 +105,12 @@ apply_bd_automation -rule xilinx.com:bd_rule:axi4 \
     [get_bd_intf_pins axil_regs_0/S_AXI]
 
 # ---- 用户寄存器引出到 BD 外（名字会带 _0 后缀，下面改名）----
-foreach p {mode threshold filter_en frame_cnt status} {
+set bd_user_pins {mode threshold filter_en frame_cnt status \
+                  img_we img_addr img_data box_bus commit_tog}
+foreach p $bd_user_pins {
     make_bd_pins_external [get_bd_pins axil_regs_0/$p]
 }
-foreach p {mode threshold filter_en frame_cnt status} {
+foreach p $bd_user_pins {
     set np [get_bd_ports -quiet ${p}_0]
     if {[llength $np] > 0} { set_property name $p $np }
 }
